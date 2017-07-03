@@ -1,0 +1,121 @@
+body h1,h2,h3,h4,h5,p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background: #161B29;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-message h1{
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+.welcome-message h2{
+    font-size: 16px;
+}
+
+
+.arrow a{
+    color: white;
+    font-size: 16px;
+}
+
+.header .btn{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title{
+    margin-top: 20em;
+}
+
+.info{
+    margin-top: 2em;
+}
+
+.skill-title h1{
+    font-weight: bold;
+    color: #232B3F;
+}
+
+.chart{
+    width: 500px;
+    height: 500px;
+}
+
+.my-work{
+    background: #161B29;
+    color: white;
+    height: 100vh;
+}
+
+.title-work{
+    margin-top: 5em;
+}
+
+.title-work h1{
+    font-weight: bold;
+}
+
+
+.work-tabs{
+    background: none;
+    border: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-tabs a{
+    color: white;
+}
+
+.work-tabs a:hover{
+    background: none;
+    border-bottom: 5px solid #313B56;
+}
+
+.models{
+    background: #E5EBFB;
+}
+
+.models h1{
+    font-weight: bold;
+    color: #232B3F;
+    padding-top: 1em;
+}
+
+.models-tabs{
+    background: none;
+    border: none;
+}
+
+.models-tabs a{
+    color: #232B3F;
+    background: none;
+
+}
+.models-tabs a:hover{
+    background: none;
+    border-bottom: 5px solid #313B56;
+}
+
+.models-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-content{
+    background: none;
+}
+
+.thumbnail{
+    width: 95%;
+}
