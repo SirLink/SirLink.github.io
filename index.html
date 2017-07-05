@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="favicon.png">
   </head>
   <body>
     <!--Header-->
     <header class="header">
-        <div class="cell title">
-            <div class="grid-x">
-                <div class="grid-container">
-                    <div class="grid-x welcome-message">
-                        <div class="cell text-center">
-                            <h1>Wilmer Marchan</h1>
-                        </div>
-                        <div class="cell text-center">
-                            <h2>Welcome to my portfolio, thank you for visiting.</h2>
-                        </div>
+        <div class="title grid-container">
+            <div class="grid-y" style="height: 100vh;">
+                <cell class="small-4"></cell>
+                <div class="cell small-5 g">
+                    <div class="welcome-message">
+                            <div class="text-center">
+                                <h1>Wilmer Marchan</h1>
+                                <h2>Welcome to my portfolio, thank you for visiting.</h2>
+                            </div>
                     </div>
                 </div>
-        </div>
-            <div class="cell btn">
-                <div class="grid-container">
-                    <div class="cell arrow text-center">
-                        <ul class="menu expanded"  data-magellan>
-                            <li>
-                                <a href="#info"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></li>    
-                            </li>
-                        </ul>
+                <div class="cell small-3">
+                    <div class="btn">
+                            <div class="arrow text-center">
+                                <ul class="menu expanded"  data-magellan>
+                                    <li>
+                                        <a href="#info"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></li>    
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -54,30 +54,8 @@
                         lacinia velit, sit amet consequat tortor leo non ligula. Maecenas vehicula purus sed 
                         laoreet sollicitudin.</p>
                 </div>
-                <div class="cell text-center my-info-two">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id condimentum lectus. 
-                        Curabitur interdum facilisis ipsum. Fusce sit amet eros purus. Nunc eu aliquam sem, 
-                        eget luctus risus. In congue nisi id dolor sodales, ut euismod velit viverra. Nunc
-                        in risus vel odio facilisis viverra. Nulla at auctor lorem. Vestibulum sit amet magna 
-                        vel lectus pharetra ornare nec sit amet neque. Nulla aliquet lectus purus, vestibulum 
-                        efficitur dui tincidunt eu. Proin sollicitudin, orci non varius mollis, lectus enim 
-                        lacinia velit, sit amet consequat tortor leo non ligula. Maecenas vehicula purus sed 
-                        laoreet sollicitudin.</p>
-                </div>
-                <div class="cell text-center skill-title">
-                    <h1>My skills</h1>
-                </div>
-                <div class="cell chart text-center medium-4 small-12 skill-title">
-                    <h1>HTML</h1>
-                    <canvas id="htmlChart"></canvas>
-                </div>
-                <div class="cell chart text-center medium-4 small-12 skill-title">
-                    <h1>CSS</h1>
-                    <canvas id="cssChart"></canvas>
-                </div>
-                <div class="cell chart text-center medium-4 small-12 skill-title">
-                    <h1>JS</h1>
-                    <canvas id="jsChart"></canvas>
+                <div class="cell text-center info-button">
+                    <a href="" class="button">Learn more.</a>
                 </div>
             </div>
         </div>
@@ -90,6 +68,30 @@
             <div class="grid-x">
                 <div class="cell text-center title-work">
                     <h1>My work</h1>
+                </div>
+                <div class="cell small-12 medium-6">
+                    <a href="" class="page">
+                        <h1 class="text-center">Invie Guitar Shop</h1>
+                        <img src="images\pages\invie.png" alt="" class="thumbnail">
+                    </a>
+                </div>
+                <div class="cell small-12 medium-6">
+                    <a href=""  class="page">
+                        <h1 class="text-center">Car Show Foundation</h1>
+                        <img src="images\pages\Car-Show.png" alt="" class="thumbnail">
+                    </a>
+                </div>
+                <div class="cell small-12 medium-6">
+                    <a href=""  class="page">
+                        <h1 class="text-center">Blog</h1>
+                        <img src="images\pages\blog.png" alt="" class="thumbnail">
+                    </a>
+                </div>
+                <div class="cell small-12 medium-6">
+                    <a href=""  class="page">
+                        <h1 class="text-center">Shop Bootstrap</h1>
+                        <img src="images\pages\Shop.png" alt="" class="thumbnail">
+                    </a>
                 </div>
             </div>
         </div>
@@ -104,10 +106,10 @@
                 </div>
                 <div class="cell models-cell">
                     <ul class="tabs models-tabs" data-tabs id="models-tabs">
-                        <li class="tabs-title is-active"><a href="">2014</a></li>
-                        <li class="tabs-title"><a href="">2015</a></li>
-                        <li class="tabs-title"><a href="">2016</a></li>
-                        <li class="tabs-title"><a href="">2017</a></li>
+                        <li class="tabs-title is-active"><a href="#2014">2014</a></li>
+                        <li class="tabs-title"><a href="#2015">2015</a></li>
+                        <li class="tabs-title"><a href="#2016">2016</a></li>
+                        <li class="tabs-title"><a href="#2017">2017</a></li>
                     </ul>
                 </div>
             </div>
@@ -115,81 +117,127 @@
                 <div class="tabs-panel is-active" id="2014">
                     <div class="grid-x">
                         <cell class="medium-6 small-12 model-image">
-                            <h1 class="text-center">NAME</h1>
-                            <img src="images\2014\Modular Tower assets.jpg" alt="test" class="thumbnail">
+                            <a href="">
+                                <h1 class="text-center">Modular Tower</h1>
+                                <img src="images\models\2014\Modular Tower assets.jpg" alt="test" class="thumbnail">
+                            </a>
                         </cell>
                         <cell class="medium-6 small-12 model-image">
-                            <h1 class="text-center">NAME</h1>
-                            <img src="images\2014\Modular Tower assets.jpg" alt="test" class="thumbnail">
+                            <a href="">
+                                <h1 class="text-center">Archer</h1>
+                                <img src="images\models\2014\Bow.png" alt="test" class="thumbnail">
+                            </a>
                         </cell>
                         <cell class="medium-6 small-12 model-image">
-                            <h1 class="text-center">NAME</h1>
-                            <img src="images\2014\Modular Tower assets.jpg" alt="test" class="thumbnail">
+                            <a href="">
+                                <h1 class="text-center">Blacksmith</h1>
+                                <img src="images\models\2014\blacksmith modular.png" alt="test" class="thumbnail">
+                            </a>
                         </cell>
                         <cell class="medium-6 small-12 model-image">
-                            <h1 class="text-center">NAME</h1>
-                            <img src="images\2014\Modular Tower assets.jpg" alt="test" class="thumbnail">
+                            <a href="">
+                                <h1 class="text-center">Campfire</h1>
+                                <img src="images\models\2014\Campfire.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                    </div>
+                </div>
+                <div class="tabs-panel" id="2015">
+                    <div class="grid-x">
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Barrels</h1>
+                                <img src="images\models\2015\barrel.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Modular House</h1>
+                                <img src="images\models\2015\modular house.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Chain mail armor</h1>
+                                <img src="images\models\2015\chain-mail armor.png " alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Gladiator</h1>
+                                <img src="images\models\2015\gladiator1.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                    </div>
+                </div>
+                <div class="tabs-panel" id="2016">
+                    <div class="grid-x">
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Blacksmith update</h1>
+                                <img src="images\models\2016\blacksmith.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Blacksmith update</h1>
+                                <img src="images\models\2016\blacksmith2.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Tent</h1>
+                                <img src="images\models\2016\tent.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Sword with scabbard</h1>
+                                <img src="images\models\2016\scabbard.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                    </div>
+                </div>
+                <div class="tabs-panel" id="2017">
+                    <div class="grid-x">
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Bastard axe</h1>
+                                <img src="images\models\2017\Bastard axe.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Slavic Axe</h1>
+                                <img src="images\models\2017\slavic axe.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Great Axe</h1>
+                                <img src="images\models\2017\Great axe.png" alt="test" class="thumbnail">
+                            </a>
+                        </cell>
+                        <cell class="medium-6 small-12 model-image">
+                            <a href="">
+                                <h1 class="text-center">Battle Axe Le Duc</h1>
+                                <img src="images\models\2017\Battle axe le duc.png" alt="test" class="thumbnail">
+                            </a>
                         </cell>
                     </div>
                 </div>
             </div>
+            <div class="grid-container text-center">
+                <a href="https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:11475" target="_blank">Unity Asset Store Link</a>
+            </div>
         </div>
     </section>
+    <!--<div class="icons text-center">Icons made by <a href="http://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
     <!--3D Models-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
-    <script>
-        var hct =document.getElementById("htmlChart");
-        var jct =document.getElementById('jsChart');
-        var cct =document.getElementById("cssChart");
-        var options = {
-                cutoutPercentage: 60,
-                tooltips: {enabled: false,}
-            }
-        var htmlChart = new Chart(hct,{
-            type: 'pie',
-            data: { 
-                label: 'HTML',
-                datasets: [{
-                    data: [95, 5],
-                    backgroundColor:[
-                    'rgb(182, 198, 240)',
-
-                ],
-                }],
-            },
-            options: options,
-            
-        });
-        var jsChart = new Chart(jct,{
-            type: 'pie',
-            data: { 
-                label: 'JS',
-                datasets: [{
-                    data: [85,15],
-                    backgroundColor:[
-                    'rgb(182, 198, 240)',
-                ],
-                }],
-            },
-            options: options,
-        })
-        var cssChart = new Chart(cct,{
-            type: 'pie',
-            data: { 
-                label: 'CCS',
-                datasets: [{
-                    data: [95,5],
-                    backgroundColor:[
-                    'rgb(182, 198, 240)',
-                ],
-                }],
-            },
-            options: options,
-        })
-    </script>
   </body>
 </html>
