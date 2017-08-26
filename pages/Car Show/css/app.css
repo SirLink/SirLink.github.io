@@ -1,0 +1,154 @@
+body{
+  background-color: #2E4172;
+  font-family: 'Bree Serif', serif;
+}
+
+h1,h2,h3,h4,h5,h6,button,input[type="submit"]{
+  font-family: 'Bree Serif', serif;
+}
+
+#social-container{
+  background-color: #1c3643;
+}
+
+#logo-container h1{
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+
+#logo-container .callout{
+  background-color: #162955;
+  color: white;
+  margin-bottom: 0px;
+}
+
+#menu-container{
+  background-color: #1E253D;
+}
+
+#menu-container li a{
+  font-family: 'Bree Serif', serif;
+  color: white;
+}
+
+#menu-container li a:hover{
+  color: #f6e15f;
+}
+
+#submenu-container{
+  background-color: #1E253D;
+  border: none;
+}
+
+#tickets-action .callout{
+  background-color: #4F628E;
+  color: white;
+  margin: 0;
+}
+
+#tickets-action button{
+  border: 1px solid white;
+  color: white;
+}
+
+#lineup-container{
+    padding: 1em;
+}
+
+#lineup-container,
+#lineup-container .tabs,
+#lineup-container .tabs .tabs-title,
+#lineup-container .tabs-panel,
+#lineup-container .tabs .tabs-title.is-active a {
+  background-color: #1E253D;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.tabs-content{
+  border: 0;
+}
+
+#lineup-container .tabs .tabs-title a{
+  font-size: 18px;
+  font-family: 'Bree Serif', serif;
+  color: #a7fffb;
+}
+
+#lineup-container .tabs .tabs-title a:hover{
+  color: white;
+  background-color: #1E253D;
+}
+
+.tabs-title{
+  display: inline-block;
+  float: none;
+}
+
+#lineup-container .orbit{
+  margin-bottom: 10px;
+}
+
+.orbit-image{
+  width: 500px;
+  height: auto;
+}
+
+#lineup-container .column:nth-child(odd) .orbit-caption{
+  text-align: right;
+}
+
+#tickets-container{
+  padding: 1em 0;
+  background-color: #4F628E;
+  color: white;
+}
+
+.pricing-table{
+  margin: 10px 0;
+}
+
+.pricing-table li, .pricing-table li.description{
+  color: black;
+  font-size: 20px;
+}
+
+.pricing-table li.title{
+  font-size: 30px;
+}
+
+#info-container{
+  padding: 1em 0;
+  color: white;
+  background: #161742;
+}
+
+#info-container .info-map iframe{
+  width: 100%;
+}
+
+#suscribete-container{
+  background-color: #ee3f54;
+  padding: 1em 0;
+  color: white;
+}
+
+.data-sticky{
+  width: 100%;
+  z-index: 2;
+}
+
+#offCanvas, #offCanvas li a{
+  background-color: black;
+  color: white;
+  font-family: 'Bree Serif', serif;
+}
+
+#offCanvas .is-drilldown-submenu-parent > a::after{
+  border-color: transparent transparent transparent white;
+}
+
+#offCanvas .js-drilldown-back > a::before{
+  border-color: transparent white transparent transparent;
+}

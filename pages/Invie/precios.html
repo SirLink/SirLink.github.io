@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invie - Guitarras invisibles para todos- Precios</title>
+    <link rel="stylesheet" href="Css/invie.css"
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,800" rel="stylesheet">
+  </head>
+  <body>
+    <!-- cabecera -->
+    <section class="portada_precios">
+      <header id="cabecera" class="cabecera contenedor">
+        <!-- Logotipo -->
+        <figure class="Logotipo">
+          <img src="Images\invie.png"width="186"height="60" alt="Invie Logo"/>
+        </figure>
+        <!-- Menu -->
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="Index.html">Home</a>
+            </li>
+            <li>
+              <a href="Index.html#guitarras">Guitarras</a>
+            </li>
+            <li>
+              <a href="precios.html">Precios</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <!-- Tablas -->
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Invie Acustica</td>
+            <td>$100000000000</td>
+            <td>Una guitarra muy pro.</td>
+          </tr>
+          <tr>
+            <td>Invie Classic</td>
+            <td>$100000000000</td>
+            <td>Una guitarra muy pro.</td>
+          </tr>
+          <tr>
+            <td>Invie Classic</td>
+            <td>$100000000000</td>
+            <td>Una guitarra muy pro.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="Images\invie-white.png" alt="Logotipo invie"/>
+          <a href="tel:+573024456678"> <strong>Telefono</strong> <span>3024456678</span></a>
+          <a href="mailto:contacto@invie.com"><strong>Contacto</strong> <span>contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Nombre"/>
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" placeholder="Email"/>
+              <label for="mujer">
+            <div class="sexo">
+              <input type="radio" id="mujer" checked name="sexo" value="mujer"/> Mujer
+              </label>
+              <label for="hombre">
+              <input type="radio" id="hombre" name="sexo" value="hombre"/> Hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion">Cotizacion
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="asunto">Asunto</label>
+            <textarea name="comentarios" id="asunto "rows="5" cols="20"></textarea>
+            <input type="submit" value="Enviar" class="button"></input>
+          </div>
+
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
