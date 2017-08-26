@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header-container">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col columna">
+            <img src="images\AMD_Logo-old.png" alt="">
+          </div>
+          <div class="col text-right columna">
+            <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navmenu">
+              &#9776;
+            </button>
+            <a class="hidden-xs-down" href="#">Iniciar Sesion</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- Menu -->
+    <div id="menu-container">
+        <nav class="navbar navbar-light bg-faded navbar-toggleable">
+          <div class="navbar-collapse collapse" id="navmenu">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item text-center">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link active" href="#">Catalogo</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" href="#">Carro</a>
+                </li>
+                <li class="nav-item text-center hidden-sm-up">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <form class="barra-busqueda form-inline hidden-xs-down" action="index.html" method="post">
+                <div class="input-group">
+                  <input class="form-control" type="text"  placeholder="¿Encontro lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-outline-danger" type="button" name="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+          <nav id="search-bar" class="container hidden-sm-up">
+            <form class="barra-busqueda form-inline" action="index.html" method="post">
+              <div class="input-group">
+                <input class="form-control" type="text"  placeholder="¿Encontro lo que buscaba?">
+                <span class="input-group-btn">
+                  <button class="btn btn-outline-danger" type="button" name="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </nav>
+    </div>
+    <!-- Menu -->
+
+    <!-- Breadcrumbs -->
+    <section id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs">
+            <nav class="breadcrumb">
+              <a href="index.html" class="breadcrumb-item">Home</a>
+              <a href="catalogo.html" class="breadcrumb-item">Catalogo</a>
+              <span class="breadcrumb-item active">Todos los productos</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Breadcrubms -->
+
+    <!-- Productos -->
+    <section id="productos-container">
+      <div class="container">
+        <div class="row">
+            <!-- Filtros -->
+            <div class="col-xs-12 col-md-3">
+              <div class="list-group filtros-toggle hidden-sm-up">
+                <a href="#" id="filtros-toggle" class="list-group-item list-group-item-action navbar-toggler" data-target=".filtros-container" data-toggle="collapse">
+                <h5 class="list-group-item-heading">Filtros <i class="fa fa-chevron-down"></i></h5></a>
+              </div>
+              <div  class="collapse show navbar-toggleable filtros-container">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active">
+                    <h4 class="list-group-item-heading">Serie</h4>
+                  </a>
+                  <a href="#" class="justify-content-between list-group-item list-group-item-action">
+                    <h5 class="list-group-item-heading">Radeon™ serie RX</h5><span class="badge badge-pill badge-default">5</span>
+                  </a>
+                  <a href="#" class="justify-content-between list-group-item list-group-item-action">
+                    <h5 class="list-group-item-heading">Radeon™ serie R9</h5><span class="badge badge-pill badge-default">7</span>
+                  </a>
+                  <a href="#" class="justify-content-between list-group-item list-group-item-action">
+                    <h5 class="list-group-item-heading">Radeon™ serie R7</h5><span class="badge badge-pill badge-default">10</span>
+                  </a>
+                  <a href="#" class="justify-content-between list-group-item list-group-item-action">
+                    <h5 class="list-group-item-heading">Radeon™ serie R5</h5><span class="badge badge-pill badge-default">7</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Filtros -->
+            <!-- Productos -->
+            <div class="col-xs-12 col-md-9 listado-productos">
+              <div class="row">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                      <img src="images\pressshot.png"class="card-img-top img-fluid" alt="r9 nano">
+                      <div class="card-block">
+                        <h4 class="card-title">R9 Nano</h4>
+                        <p class="card-text">The AMD Radeon R9 Nano graphics card is AMD’s most innovative and advanced GPU to date, delivering 4096-bit High-Bandwidth Memory (HBM), the highest memory bandwidth ever in a GPU, engineered for 4K and VR gaming</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 paginator-container d-flex justify-content-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a href="#" class="page-link">&laquo;</a>
+                      </li>
+                      <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="#" class="page-link">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="#" class="page-link">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a href="#" class="page-link">&raquo</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <!-- Productos -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Productos -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalOferta">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Oferta especial</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Registrate hoy y recibe $15 de descuento!
+            <form class="form" action="#">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="correo@corre.com">
+                <small class="text-muted form-text">No compartiremos tu informacion con nadie</small>
+              </div>
+              <button type="submit" class="btn btn-danger">Registrarse</button>
+              <button type="button" id="btnNoRegistrar" class="btn btn-danger" data-dismiss="modal">No, no quiero el descuento</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Footer -->
+    <footer id="footer-container">
+      <div class="container">
+        <div class="row text-center text-md-left">
+          <div class="col-md-4">
+            <form id="suscribeForm" action="index.html" method="post">
+              <h4 class="text-uppercase">¿Quieres recibir todas las novedades?</h4>
+              <div class="form-group">
+                <input type="email" class="form-control email" name="email" placeholder="correo@correo.com">
+                <small class="form-text text-muted">No compartiremos tu informacion con nadie.</small>
+              </div>
+              <button type="submit" name="button" class="btn btn-primary form-text">Suscribirse</button>
+            </form>
+          </div>
+          <div class="col-md-3 offset-md-5">
+            <h4>Navegacion</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Catalogo</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Carro</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js\app.js"></script>
+    <script type="text/javascript">
+      mostrarModal();
+    </script>
+  </body>
+</html>

@@ -113,3 +113,20 @@ body h1,h2,h3,h4,h5,p{
 .thumbnail{
     width: 95%;
 }
+
+.certs{
+    background: #161B29;
+    color: white;
+}
+
+.cert h1{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cert{
+    color: white;
+    cursor: pointer;
+}
+

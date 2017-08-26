@@ -1,0 +1,116 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#header-container{
+  background-color: #AA3939;
+  color: white;
+}
+
+.columna, .columna a{
+  color: white;
+}
+
+.columna img{
+  width: 30%;
+  margin: 10px 0px;
+}
+
+#header-container .navbar-toggler{
+  color: white;
+}
+
+#gpuCarousel,#small-container{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+26,000000+47,000000+58,000000+58,000000+65,000000+65,000000+67,000000+71&0+47,0.65+100 */
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 47%, rgba(0,0,0,0.13) 58%, rgba(0,0,0,0.22) 65%, rgba(0,0,0,0.24) 67%, rgba(0,0,0,0.29) 71%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 26%,rgba(0,0,0,0) 47%,rgba(0,0,0,0.13) 58%,rgba(0,0,0,0.22) 65%,rgba(0,0,0,0.24) 67%,rgba(0,0,0,0.29) 71%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(0,0,0,0) 26%,rgba(0,0,0,0) 47%,rgba(0,0,0,0.13) 58%,rgba(0,0,0,0.22) 65%,rgba(0,0,0,0.24) 67%,rgba(0,0,0,0.29) 71%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#small-container img{
+  margin: auto;
+}
+.carousel-caption{
+  background: rgba(0,0,0,0.29);
+  color: white;
+}
+
+#info-container{
+  background-color: #AA3939;
+  color: white;
+}
+
+#info-container h4{
+  margin: 1em 0;
+}
+#info-container img{
+  margin: 0 auto;
+  margin-top: 1em;
+}
+#footer-container{
+  background-color: #56A156;
+  color: white;
+  padding: 3em 0;
+}
+
+#footer-container h4{
+  font-size: 16px;
+}
+
+#footer-container .nav-link{
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #footer-container [class*="col-"]{
+    margin-bottom: 2em;
+  }
+}
+
+#breadcrumbs-container .breadcrumb{
+  background-color: white;
+
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item{
+  color: #1c3643;
+}
+
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item.active{
+  color: #95a5a6;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+  content: ">>";
+}
+
+.filtros-container .list-group-item-action.active{
+  background-color: #AA3939;
+}
+
+.filtros-container .list-group-item-action h4{
+  font-size: 20px;
+}
+
+.filtros-container .list-group-item-action h5{
+  font-size: 15px;
+}
+
+.filtros-container,.list-group,.listado-productos{
+  margin-bottom: 1em;
+}
+
+.card{
+  margin-bottom: 1em;
+}
+
+.paginator-container .page-item.active .page-link{
+  background-color: #AA3939;
+  border-color: #AA3939;
+}
+
+.paginator-container .page-link{
+  color: #AA3939;
+}
