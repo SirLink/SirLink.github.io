@@ -127,6 +127,12 @@ body h1,h2,h3,h4,h5,p{
 
 .cert{
     color: white;
+    transition:transform 0.25s ease;
     cursor: pointer;
+}
+
+.cert:hover{
+       -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
 }
 
