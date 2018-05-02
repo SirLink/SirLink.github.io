@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">  
+    <title>Api</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="center">
+            <a class="logo"><img src="images/meal-icon.png" alt=""></a>
+            <span class="toggle-nav">Menu</span>
+            <nav class="top-menu collapse">
+                <ul>
+                    <li class="menu-header"><a href="index.html" class="button">Home Page</a></li>
+                    <li class="menu-header"><a href="form.html" class="button">Form Page</a></li>
+                    <li class="menu-header"><a href="map.html" class="button">Map Page</a></li>
+                    <li class="menu-header selected"><a href="" class="button">Api Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <p class="about">About this page</p>
+
+    <div class="hidden-panel" style="display: none">
+            <h1>Here you can see random meals and their recipes.</h1>
+    </div>
+
+    <div class="container-api card" id="container-api">
+
+        <table id="table-data">
+            <tr>
+                <th>Meal name</th>
+                <th>Meal Category</th>
+                <th>Meal Area</th>
+            </tr>
+        </table>
+
+        <div class="button-container" id="button">
+            <button class="button-api" id="reload">
+                Reload
+            </button>
+            <button class="button-api" id="info">
+                Display info
+            </button>
+        </div>
+
+        <div class="hidden-info" id="info-container" style="display: none">
+            <ol id="ingredients">
+            </ol>
+
+        </div>
+    </div>
+
+            
+    <footer class="footer">
+            <h1>Created by SirLink98</h1>
+        </footer>
+    
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/api.js"></script>
+    
+</body>
+</html>
