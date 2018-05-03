@@ -1,16 +1,13 @@
+
 function toggleNavMenu(){
-    $('.header').toggleClass('menu-expanded');
-    $('.top-menu').toggleClass('collapse');
+  $('.header').toggleClass('menu-expanded');
+  $('.top-menu').toggleClass('collapse');
 }
 
 $(window).on('load',function(){
     $('.toggle-nav').click(toggleNavMenu)
 });
 
-
-$('.about').click(function(){
-    $('.hidden-panel').slideToggle();
-  });
 
   $('.why').click(function(){
     $('.hidden-panel-why').slideToggle();
@@ -38,295 +35,55 @@ function initMap() {
     var mexican = {lat: 23.634501, lng: -102.55278399999997};
 
     var styledMapType  = new google.maps.StyledMapType([
-        {
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#ebe3cd"
-            }
-          ]
-        },
-        {
-          "elementType": "labels",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#523735"
-            }
-          ]
-        },
-        {
-          "elementType": "labels.text.stroke",
-          "stylers": [
-            {
-              "color": "#f5f1e6"
-            }
-          ]
-        },
-        {
-          "featureType": "administrative",
-          "elementType": "geometry.stroke",
-          "stylers": [
-            {
-              "color": "#c9b2a6"
-            }
-          ]
-        },
-        {
-          "featureType": "administrative.land_parcel",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "administrative.land_parcel",
-          "elementType": "geometry.stroke",
-          "stylers": [
-            {
-              "color": "#dcd2be"
-            }
-          ]
-        },
-        {
-          "featureType": "administrative.land_parcel",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#ae9e90"
-            }
-          ]
-        },
-        {
-          "featureType": "administrative.neighborhood",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "landscape.natural",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#dfd2ae"
-            }
-          ]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#dfd2ae"
-            }
-          ]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#93817c"
-            }
-          ]
-        },
-        {
-          "featureType": "poi.business",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "geometry.fill",
-          "stylers": [
-            {
-              "color": "#a5b076"
-            }
-          ]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#447530"
-            }
-          ]
-        },
-        {
-          "featureType": "road",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#f5f1e6"
-            }
-          ]
-        },
-        {
-          "featureType": "road",
-          "elementType": "labels.icon",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#fdfcf8"
-            }
-          ]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "labels",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#f8c967"
-            }
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry.stroke",
-          "stylers": [
-            {
-              "color": "#e9bc62"
-            }
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "labels",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "road.highway.controlled_access",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#e98d58"
-            }
-          ]
-        },
-        {
-          "featureType": "road.highway.controlled_access",
-          "elementType": "geometry.stroke",
-          "stylers": [
-            {
-              "color": "#db8555"
-            }
-          ]
-        },
-        {
-          "featureType": "road.local",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "road.local",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#806b63"
-            }
-          ]
-        },
-        {
-          "featureType": "transit",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "transit.line",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#dfd2ae"
-            }
-          ]
-        },
-        {
-          "featureType": "transit.line",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#8f7d77"
-            }
-          ]
-        },
-        {
-          "featureType": "transit.line",
-          "elementType": "labels.text.stroke",
-          "stylers": [
-            {
-              "color": "#ebe3cd"
-            }
-          ]
-        },
-        {
-          "featureType": "transit.station",
-          "elementType": "geometry",
-          "stylers": [
-            {
-              "color": "#dfd2ae"
-            }
-          ]
-        },
-        {
-          "featureType": "water",
-          "elementType": "geometry.fill",
-          "stylers": [
-            {
-              "color": "#b9d3c2"
-            }
-          ]
-        },
-        {
-          "featureType": "water",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#92998d"
-            }
-          ]
-        }
-      ], {name: 'Styled Map'});
+      {
+        "featureType": "water",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#1A87D6" }
+        ]
+      },{
+        "featureType": "landscape",
+        "stylers": [
+          { "color": "#AFFFA0" }
+        ]
+      },{
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+          { "color": "#59A499" }
+        ]
+      },{
+        "featureType": "poi",
+        "stylers": [
+          { "color": "#EAFFE5" }
+        ]
+      },{
+      },{
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          { "color": "#F0FF8D" },
+          { "weight": 2.2 }
+        ]
+      },{
+        "featureType": "poi.business",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "poi.government",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "administrative.locality",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+      },{
+      }
+    ], {name: 'Styled Map'});
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 2,
@@ -346,7 +103,7 @@ function initMap() {
     marker.addListener('click', function() {
         var json_obj = JSON.parse(Get("https://www.themealdb.com/api/json/v1/1/filter.php?a=French"));
         var randomNumber = Math.floor(Math.random() * json_obj.meals.length) + 0  
-        var contentString = "<p>" + json_obj.meals[randomNumber].strMeal + "</p>";
+        var contentString = "<p class='recipe-map' id =" + json_obj.meals[randomNumber].strMeal + ">" + json_obj.meals[randomNumber].strMeal + "</p>";
         var infowindowF = new google.maps.InfoWindow({
             content: contentString
           });
@@ -362,7 +119,7 @@ function initMap() {
     markerCanada.addListener('click', function() {
         var json_obj = JSON.parse(Get("https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian"));
         var randomNumber = Math.floor(Math.random() * json_obj.meals.length) + 0  
-        var contentString = "<p>" + json_obj.meals[randomNumber].strMeal + "</p>";
+        var contentString = "<p class='recipe-map' id =" +json_obj.meals[randomNumber].strMeal + ">" + json_obj.meals[randomNumber].strMeal + "</p>";
         var infowindowC = new google.maps.InfoWindow({
             content: contentString
           });
@@ -377,10 +134,90 @@ function initMap() {
     markerMexico.addListener('click', function() {
         var json_obj = JSON.parse(Get("https://www.themealdb.com/api/json/v1/1/filter.php?a=Mexican"));
         var randomNumber = Math.floor(Math.random() * json_obj.meals.length) + 0  
-        var contentString = "<p>" + json_obj.meals[randomNumber].strMeal + "</p>";
+        var contentString = "<p class='recipe-map' id =" +json_obj.meals[randomNumber].strMeal + ">" + json_obj.meals[randomNumber].strMeal + "</p>";
         var infowindowM = new google.maps.InfoWindow({
             content: contentString
           });
         infowindowM.open(map, markerMexico);
       });
+
+      $('#map').on("click","p.recipe-map" ,function(){
+        var clickedBtnID = $(this).attr('id');
+        var recipeName = document.getElementById(clickedBtnID).innerHTML;
+        var json_obj = JSON.parse(Get("https://www.themealdb.com/api/json/v1/1/search.php?s="+recipeName));
+        console.log(clickedBtnID);
+
+
+        var modal = document.createElement("div");
+        modal.setAttribute("class","modal");
+        var modalDiv = document.createElement("div");
+        modalDiv.setAttribute("class","modal-content");
+        var modalBodyDiv = document.createElement("div");
+        modalBodyDiv.setAttribute("class","modal-body");
+        var headerDiv = document.createElement("div");
+        headerDiv.setAttribute("class","modal-header");
+        var footerDiv = document.createElement("div");
+        footerDiv.setAttribute("class","modal-footer");
+        var ol = document.createElement("ol");
+        var close = document.createElement("span");
+        var h2 = document.createElement("h2");
+        
+
+        close.setAttribute("class","close");
+        close.innerHTML = "&times;";
+        h2.innerHTML = recipeName;
+        ol.setAttribute("id","ingredients");
+        ol.setAttribute("style","min-height=100%")
+
+        modalBodyDiv.appendChild(ol);
+        headerDiv.appendChild(h2);
+        headerDiv.appendChild(close);
+        modalDiv.appendChild(headerDiv);
+        modalDiv.appendChild(modalBodyDiv);
+        modalDiv.appendChild(footerDiv);
+        modal.appendChild(modalDiv);
+            
+        var list = document.createElement("ol")
+        var ingredients = [];
+        for(i =0;i<21;i++){
+            var pos = i;
+            pos++;
+            var ingredient = "strIngredient" + i;
+            if(json_obj.meals[0].ingredient != ""){
+                ingredients.push(json_obj.meals[0][ingredient]);
+            }
+        }
+        ingredients.shift();
+    
+        for(i in ingredients){
+          if(ingredients[i]!=""&&ingredients[i]!=null){
+            var li = document.createElement('li');
+                li.innerHTML = ingredients[i];
+                ol.appendChild(li);
+            }
+        }
+
+        var instructions = document.createElement("p");
+        var instructionStr = json_obj.meals[0].strInstructions;
+        instructionStr = instructionStr.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    
+        instructions.innerHTML = instructionStr;
+        instructions.setAttribute("class","stylized")
+        instructions.setAttribute("style","min-height=100%")
+    
+        modalBodyDiv.appendChild(instructions);
+
+        document.body.appendChild(modal);
+
+        close.onclick = function(){
+          document.body.removeChild(modal);
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            document.body.removeChild(modal);
+          }
+      }
+
+      })
 }

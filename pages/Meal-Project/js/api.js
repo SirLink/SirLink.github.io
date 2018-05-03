@@ -7,14 +7,6 @@ $(window).on('load',function(){
     $('.toggle-nav').click(toggleNavMenu)
 });
 
-$('.about').click(function(){
-    $('.hidden-panel').slideToggle();
-  });
-  
-  $('.hidden-panel').click(function(){
-    $('.hidden-panel').slideUp();
-  });
-  
 
 //API calls
 
