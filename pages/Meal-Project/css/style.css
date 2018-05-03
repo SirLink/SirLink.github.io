@@ -478,6 +478,7 @@ th {
 }
 
 .hidden-info{
+  display: inline-block;
   width: 100%;
 }
 

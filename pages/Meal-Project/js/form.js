@@ -148,9 +148,15 @@ $('form').submit(function(ev){
 
     var form = $(this).children('.autocomplete').children(".input");
 
+    if(document.getElementById("meals")!=null){
+        console.log("test");
+        document.getElementById("meals").remove();
+    }
+
     // TODO add suggestion for area and category finish search
     switch(form[0].id){
         case "name-input":
+    
             var json_obj = JSON.parse(Get("https://www.themealdb.com/api/json/v1/1/search.php?s="+form[0].value));
 
             if(json_obj.meals != null){
@@ -342,6 +348,7 @@ $('form').submit(function(ev){
 
         break;
     }
+    form[0].value = "";
 })
 
 function tab(evt, tabName) {

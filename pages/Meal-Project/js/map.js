@@ -161,8 +161,11 @@ function initMap() {
         var ol = document.createElement("ol");
         var close = document.createElement("span");
         var h2 = document.createElement("h2");
-        
+        var img = document.createElement('img');
 
+        
+        img.setAttribute("src",json_obj.meals[0].strMealThumb);
+        img.setAttribute("class","card img-thumb");
         close.setAttribute("class","close");
         close.innerHTML = "&times;";
         h2.innerHTML = recipeName;
@@ -170,6 +173,7 @@ function initMap() {
         ol.setAttribute("style","min-height=100%")
 
         modalBodyDiv.appendChild(ol);
+        modalBodyDiv.appendChild(img);
         headerDiv.appendChild(h2);
         headerDiv.appendChild(close);
         modalDiv.appendChild(headerDiv);

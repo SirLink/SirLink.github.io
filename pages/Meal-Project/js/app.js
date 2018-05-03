@@ -128,5 +128,5 @@ function showSlides(n) {
 //How to prepare
 
 $('#info').click(function(){
-  $('.hidden-info').slideDown();
+  $('.hidden-info').slideToggle();
 })
